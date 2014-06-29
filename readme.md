@@ -1,4 +1,4 @@
-#Client�le
+#Clientele
 Simple Client Management for WordPress
 
 Traditionally Client Relationship Management has been the complicated domain of large business. Clientele aims to change that with a simple product that allows anyone to get started and quickly realise benefits.
