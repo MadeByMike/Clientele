@@ -26,7 +26,7 @@ if (!class_exists('clienteleAddOns')) {
         'version' => '1.0',
         'default_options' => array(
           'enabled' => 'on',
-          'feed_address' => '',
+          'feed_address' => 'https://raw.githubusercontent.com/MadeByMike/Clientele/master/clientele-feed.json',
           'dash_safe' => array(
             'a' => array(
               'href' => array(),
