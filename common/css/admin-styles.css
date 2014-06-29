@@ -1,0 +1,262 @@
+/*  
+
+This is the global admin stylesheet. 
+Individual modules may have their own stylesheet but these ID and classes
+apply to everything in the admin world.
+
+*/
+
+/*  Unorganised Micsness  */
+
+.clientele-wrapper {
+    margin: 0 15px;
+}
+
+.clientele-header {
+    height: 80px;
+    border-radius: 5px;
+    line-height: 80px;
+    margin: 0;
+    padding: 0;
+    box-shadow: 3px 3px 4px #1C6880;
+}
+
+.clientele-logo {
+    float: left;
+    height: 50px;
+    margin: 10px;
+}
+
+.wide-input {
+    width: 400px;
+}
+
+.clientele-footer {
+    margin-top: 20px;
+    clear: both;
+    float: right;
+}
+
+/*  Dashboardness  */
+
+.clientele-modules {
+    padding-top: 20px;
+}
+
+.clientele-module {
+    transition-property: background-color, color;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    -webkit-transition-property: background-color, color;
+    -webkit-transition-duration: 1s;
+    -o-transition-property: background-color, color, border-color, box-shadow;
+    -o-transition-duration: 1s;
+    float: left;
+    margin: 0 30px 30px 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    width: 180px;
+    padding: 8px;
+    min-height: 250px;
+    position: relative;
+}
+
+.clientele-module:hover {
+    transition-property: background-color, color, border-color;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+    -webkit-transition-property: background-color, border-color, color;
+    -webkit-transition-duration: 2s;
+    -o-transition-property: background-color, border-color, color;
+    -o-transition-duration: 2s;
+    border-color: #3893C8;
+    box-shadow: inset 0px 0px 3px 1px rgba(174, 217, 241, .5);
+}
+
+.clientele-module.clientele-disabled h3 {
+    color: #777;
+}
+
+.clientele-module.clientele-disabled {
+    color: #CCC !important;
+}
+
+.clientele-module.clientele-disabled:hover {
+    color: #666 !important;
+}
+
+.clientele-module h3 {
+    float: left;
+    margin-right: 30px;
+}
+
+.clientele-module p {
+    clear: both;
+}
+
+.clientele-module .clientele-buttons {
+    bottom: 0;
+    position: absolute;
+    width: 90%;
+}
+
+.clientele-module .clientele-buttons .button {
+    float: right;
+}
+
+/* Toggle switchness */
+
+.toggle {
+    position: relative;
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: medium none;
+    min-height: 36px;
+}
+
+.toggle label {
+    position: relative;
+    z-index: 3;
+    display: block;
+    font-size: 0px;
+    line-height: 15px;
+}
+
+.toggle input {
+    position: absolute;
+    opacity: 0;
+	height: 1px;
+    z-index: 5;
+	filter: alpha(opacity=0);
+}
+
+.toggle label:after {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    display: block;
+    width: 21px;
+    height: 30px;
+    padding: 0px 2px;
+
+    background-color: #dd7e6d;
+    border: 1px solid #b15b4d;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.17), 0 1px 0px rgba(255, 255, 255, 0.9);
+
+    /* Text labels */
+    content: "ON OFF";
+
+    color: #8f5247;
+    line-height: 14px;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    text-shadow: 0 1px 0px rgba(255, 255, 255, 0.4);
+
+}
+
+.toggle span {
+    display: block;
+    position: absolute;
+    right: -4px;
+    top: 2px;
+    z-index: 4;
+    width: 33px;
+    height: 12px;
+
+    border: 1px solid #bbbbbb;
+
+    background-color: #f7f7f7;
+    background-image: -webkit-linear-gradient(top, #f7f7f7, #ececec);
+    background-image: -moz-linear-gradient(top, #f7f7f7, #ececec);
+    background-image: -ms-linear-gradient(top, #f7f7f7, #ececec);
+    background-image: -o-linear-gradient(top, #f7f7f7, #ececec);
+    background-image: linear-gradient(top, #f7f7f7, #ececec);
+
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 1), 0 1px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.toggle input:checked ~ span {
+    top: 16px;
+}
+
+.toggle input:checked + label:after {
+    background-color: #a0c66b;
+    border-color: #87aa5b;
+    color: #60783f;
+}
+
+/* For ie8 add checked class with JS */
+.toggle input.checked ~ label:after {
+    background-color: #a0c66b;
+    border-color: #87aa5b;
+    color: #60783f;
+}
+
+.toggle input.checked  ~ span {
+    top: 18px;
+}
+
+/*  Messageness  */
+
+.clientele-info {
+    background-color: #D9EDF7;
+    border: solid 1px #BCE8F1;
+    color: #3A87AD;
+}
+
+.clientele-success {
+    background-color: #DFF0D8;
+    border: solid 1px #D6E9C6;
+    color: #468847;
+}
+
+.clientele-warning {
+    background-color: #FFFFE0;
+    border: solid 1px #E6DB55;
+    color: #85632A;
+}
+
+.clientele-error {
+    background-color: #f2dede;
+    border: solid 1px #ebccd1;
+    color: #b94a48;
+}
+
+.clientele-success p,
+.clientele-info p,
+.clientele-error p,
+.clientele-warning p {
+    margin: 0;
+    padding: 0;
+}
+
+.clientele-success, .clientele-info, .clientele-error, .clientele-warning {
+    margin: 5px;
+    padding: 0.5em;
+}
+.input-textarea,
+.input-location{
+    width: 25em;
+}
+.form-table td{
+    valign: top;
+}
+.clientele-help-table {
+  border-collapse: collapse;
+}
+.clientele-help-table td,
+.clientele-help-table th{
+  border: solid 1px #ccc;
+  padding: 2px 4px;
+}

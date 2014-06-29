@@ -1,0 +1,1 @@
+//These scripts are global and are applied outside the admin area. (nothing yet)
